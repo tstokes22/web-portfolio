@@ -4,6 +4,7 @@ class ToDoList {
       this.taskList = document.getElementById("taskList");
       this.bindEventListeners();
       this.addTask();
+      this.checkInput();
     }
   
     bindEventListeners() {
@@ -11,8 +12,11 @@ class ToDoList {
         this.addTask();
       });
       this.taskInput.addEventListener("click", () => {
-        
-      })
+      });
+      this.taskInput.addEventListener("input", () => {
+        this.checkInput();
+        console.log(String(this.taskInput.value))
+      });
       
     }
   
@@ -27,13 +31,14 @@ class ToDoList {
         removeButton.type = "image";
         removeButton.src = "images/trash.svg";
         removeButton.setAttribute("id", "removeTaskButton");
-        
+       
         taskCheckBox.type = "checkbox";
         task.innerText = taskName;
         this.taskList.append(removeButton);
         this.taskList.append(taskCheckBox);
         this.taskList.append(task);
         this.taskInput.value = "";
+        this.checkInput();
         removeButton.addEventListener('click', () =>{
           task.remove();
           removeButton.remove();
@@ -50,8 +55,14 @@ class ToDoList {
         });
       }
     }
-  
+
+    checkInput() {
+    if (this.taskInput.value !== '') {
+      document.getElementById("addTaskBtn").style.display = "block";
+    }else {
+      document.getElementById("addTaskBtn").style.display = "none";
+    }
   }
-  
+}
   // Usage
   const todoList = new ToDoList();
