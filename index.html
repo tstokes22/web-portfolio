@@ -9,52 +9,89 @@
 </head>
 
 <body>
-    <div class="heading">
-        <div class="heading_line1">
-            Hello, I'm
-            <span>Taylor</span>.
+    <div id="home" class="home">
+        <div class="canvas">
+            <canvas width="1920" height="318" style="display: block;">
+
+            </canvas>
         </div>
-        <div class="heading_line2">This is my web portfolio.</div>
-        <a class="heading-link" href="#projects">
-            <div class="heading-cta">
-                View my Projects
-                <svg class="heading_arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24">
-                    <title>arrow-right</title>
-                    <path
-                        d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z">
-                    </path>
-                </svg>
+
+        <div class="heading">
+            <div class="heading_line1">
+                Hello, I'm
+                <span>Taylor</span>.
             </div>
-        </a>
+            <div class="heading_line2">This is my web portfolio.</div>
+            <a class="heading-link" href="#about">
+                <div class="heading-cta">
+                    View Projects
+                    <svg class="heading_arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <title>arrow-right</title>
+                        <path
+                            d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+        </div>
     </div>
 
-    <nav class="nav_bar">
+    <nav class="navigation_bar">
         <ul class="navigation">
             <li id="nav_home" class="navigation_item">
-                Home
+                <a class="active" href="#home"> Home </a>
             </li>
             <li id="nav_about" class="navigation_item">
-                About
+                <a  href="#about">About</a>
             </li>
             <li id="nav_projects" class="navigation_item">
-                Projects
+                <a href="#projects">Projects</a>
             </li>
             <li id="nav_contact" class="navigation_item">
-                Contact
+                <a href="#contact">Contact</a>
             </li>
         </ul>
 
     </nav>
 
-    <div id="projects" class="projectsDiv">
+    <section id="about" class="about">
+        <h2 class="about_heading section_heading">
+            About
+        </h2>
+        <div class="about_content">
+            <div class="profile">
+                <p class="about_paragraph">
+                    I'm an inspiring web developer seeking an opportunity to gain hands-on experience in the industry. I
+                    have a strong foundation in web development technologies, including HTML, CSS, C++. As well as
+                    experience working with database technology such as SQL. Eager to bring my technical skills, passion
+                    for web development, and strong work ethic to a challenging and dynamic opportunity.
+                </p>
+            </div>
 
-        <a href="https://tstokes22.github.io/Procastinote/" target="_blank"> Procrastinote </a>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2 class="projects_heading section_heading">
+            Projects
+        </h2>
+        <div id="procrastinote">
+            <a href="https://tstokes22.github.io/Procastinote/" target="_blank"> Procrastinote </a>
 
-        <p> Procrastinote is a note taking website <br> with inpiration from Google Keep.</p>
+            <p> Procrastinote is a note taking website <br> with inpiration from Google Keep.</p>
+        </div>
 
-    </div>
 
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="contact_heading section_heading">
+            Contact
+        </h2>
+
+        <div>
+
+        </div>
+    </section>
 </body>
 
 </html>
