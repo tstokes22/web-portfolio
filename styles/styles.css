@@ -147,7 +147,7 @@ a {
   position: absolute;
   content: '';
   border-bottom: 18px solid rgb(6, 145, 145);
-  width: 18rem;
+  width: 100%;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -175,24 +175,22 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  width: 500px;
   flex-direction: column;
-  left: -300px;
+  
 }
 
 .about_paragraph {
   position: relative;
-  margin-top: auto;
   font-size: 2rem;
   letter-spacing: 1px;
-  margin-top: 200px;
+  
 }
 
 .projects_heading::before {
   position: absolute;
   content: '';
   border-bottom: 18px solid rgb(6, 145, 145);
-  width: 22rem;
+  width: 100%;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -201,19 +199,20 @@ a {
 
 }
 
-.procrastinote {
+.procrastinote, .stateParkProject {
   position: relative;
   display: flex;
-  align-items: center;
-  width: 500px;
   flex-direction: column;
-  left: -300px;
+  align-items: center;
 }
 
-.procrastinote a {
-  display: flex;
-  justify-content: center;
-  margin-top: 250px;
+.stateParkProject
+{
+  margin-top: 200px;
+}
+
+.procrastinote a, .stateParkProject a {
+  margin-top: 10px;
   font-size: 2rem;
   border: 3px solid rgb(6, 145, 145);
   padding: 5px;
@@ -256,7 +255,7 @@ a {
   position: absolute;
   content: '';
   border-bottom: 18px solid rgb(6, 145, 145);
-  width: 21rem;
+  width: 100%;
   display: block;
   margin: 0 auto;
   position: relative;
